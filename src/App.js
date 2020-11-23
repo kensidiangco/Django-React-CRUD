@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
       const fetchData = async () => {
-        const result =  await axios("http://localhost:8000/api/posts-list/");
+        const result =  await axios("http://django-reactjs-crud.herokuapp.com/api/posts-list/");
         setPosts(result.data);
       };
     fetchData();
@@ -38,10 +38,10 @@ function App() {
     e.preventDefault();
 
     var csrftoken = getCookie('csrftoken');
-    var url = 'http://127.0.0.1:8000/api/post-create/';
+    var url = 'http://django-reactjs-crud.herokuapp.com/api/post-create/';
 
     if(editing === true){
-      url = `http://localhost:8000/api/post-update/${active.id}/`;
+      url = `http://django-reactjs-crud.herokuapp.com/api/post-update/${active.id}/`;
       setEditing(false);
     }
 
@@ -63,7 +63,7 @@ function App() {
   const postDelete = (post) => {
 
     var csrftoken = getCookie('csrftoken');
-    fetch(`http://localhost:8000/api/post-delete/${post.id}/`, {
+    fetch(`http://django-reactjs-crud.herokuapp.com/api/post-delete/${post.id}/`, {
       method: 'DELETE',
       headers:{
         'Content-type':'application/json',
