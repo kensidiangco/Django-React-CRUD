@@ -13,10 +13,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 import os
 
-
-
-
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -30,7 +26,7 @@ SECRET_KEY = "th**6lhc8k$)hz4h70a$a0yk0=+p_j0=4uy#72t&j52vvid&ui"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-reactjs-crud.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
