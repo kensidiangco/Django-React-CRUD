@@ -13,11 +13,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 import os
 
-from django.core.wsgi import get_wsgi_application
-from whitenoise.django import DjangoWhiteNoise
 
-application = get_wsgi_application()
-application = DjangoWhiteNoise(application)
 
 
 
@@ -28,7 +24,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'th**6lhc8k$)hz4h70a$a0yk0=+p_j0=4uy#72t&j52vvid&ui'
+SECRET_KEY = "th**6lhc8k$)hz4h70a$a0yk0=+p_j0=4uy#72t&j52vvid&ui"
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
