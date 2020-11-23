@@ -1,0 +1,80 @@
+@media only screen and (min-width: 1147px) {
+	.posts {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		width: 25%;
+	}
+}
+@media only screen and (max-width: 1146px) {
+	.posts {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+}
+.post__header {
+	padding-top: 2%;
+	border-top: 1px dotted gray;
+	text-align: center;
+}
+.post__card {
+	height: auto;
+	width: auto;
+	padding: 20px;
+	border: 1px solid green;
+	border-radius: 10px;
+	margin: 10px;
+	background-color: white;
+}
+.card__header {
+	padding: 5px;
+	border-bottom: 1px solid green;
+}
+.card__body {
+	padding: 15px;
+}
+.post__button {
+}
+.deleteButton {
+	margin: 5px;
+	padding: 5px;
+	width: 100px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	outline: none;
+	background-color: red;
+	color: white;
+	cursor: pointer;
+	transition: .5s;
+}
+.deleteButton:hover {
+	background-color: tomato;
+}
+.deleteButton:active {
+	background-color: purple;
+	border: 1px solid white;
+}
+.editButton {
+	float: right;
+	margin: 5px;
+	padding: 5px;
+	width: 100px;
+	border: 1px solid gray;
+	border-radius: 5px;
+	outline: none;
+	background-color: blue;
+	color: white;
+	cursor: pointer;
+	transition: .5s;
+}
+.editButton:hover {
+	background-color: skyblue;
+}
+.editButton:active {
+	background-color: purple;
+	border: 1px solid white;
+}
